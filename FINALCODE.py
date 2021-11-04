@@ -129,7 +129,7 @@ class secondwindow:
                                 relief=tk.RIDGE)
         self.correctlabel.grid(row=4, column=0, padx=5, pady=5)
         backtomainscreen = tk.Button(mainframe,
-                                     text="Back to main window because it's hopeless...",
+                                     text="Back to main window...",
                                      relief=tk.RIDGE,
                                      command=self.closewindow)
         backtomainscreen.grid(row=5, column=0, padx=5, pady=5)
@@ -342,7 +342,7 @@ class secondwindow:
             hiddenscore[0] += 1
             self.changecolor((0, 255, 0))
         else:
-            self.correctlabel["text"] = "Idiot... capital of " + self.country[0] + " is " + self.country[1]
+            self.correctlabel["text"] = "Capital of " + self.country[0] + " is " + self.country[1]
             self.changecolor((255, 0, 0))
         self.copypic.show()
         self.countryentry.delete(0, tk.END)
@@ -405,7 +405,7 @@ class thirdwindow:
                               text=("Score:", Score[0]))
         scorelabel.grid(row=0, column=2, pady=5)
         ruleslabel = tk.Label(self.mainwindow,
-                              text="You Suck",
+                              text="Try Again!",
                               font="Arial 40 bold",
                               bg="Red")
         ruleslabel.grid(row=1, column=3)
